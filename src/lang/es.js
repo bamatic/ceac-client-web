@@ -63,6 +63,8 @@ export const lang = {
     "created": "creado",
     "thanks-buy":"gracias por su compra",
     "action":"acción",
-    "cancel":"cancelar"
+    "cancel":"cancelar",
+    "prev":"ant",
+    "next":"sig"
 
 }
