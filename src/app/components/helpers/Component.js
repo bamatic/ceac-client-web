@@ -120,4 +120,13 @@ export class Component {
         }
         return table;
     }
+    static addPagination(row, nav) {
+        const newRow = document.createElement('div');
+        newRow.classList.add('row');
+        row.appendChild(newRow);
+        const col = document.createElement('col');
+        col.classList.add('col-sm-12');
+        row.appendChild(col);
+        col.appendChild(nav);
+    }
 }

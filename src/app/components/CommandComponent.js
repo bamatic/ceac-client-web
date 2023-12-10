@@ -23,7 +23,7 @@ export async function CommandComponent(service, translator, commandId) {
                 deliveryDate: command.deliveryDate,
                 price: command.price
             }
-        })
+        });
         const tableHeaders = [
             {type: 'text', value: translator.translate('command','title'), dataKey: 'name'},
             {type: 'text', value: translator.translate('state','title'), dataKey: 'stateES'},
