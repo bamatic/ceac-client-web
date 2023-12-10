@@ -31,7 +31,7 @@ export async function ProductComponent(service, translator) {
             .catch(error=>console.log(error));
     }
     else {
-        console.log('por fuera');
+        console.log('bad response');
     }
 }
 export function ProductCardComponent(product, translator) {

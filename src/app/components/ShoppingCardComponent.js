@@ -213,7 +213,6 @@ function headerButtons(service, translator) {
     return col;
 }
 function customerAddress(item, translator) {
-    console.log(item);
     const row = document.createElement('div');
     row.classList.add('row', 'mb-4');
     const leftCol = document.createElement('div');

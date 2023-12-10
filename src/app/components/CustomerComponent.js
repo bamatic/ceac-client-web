@@ -7,7 +7,6 @@ export async function CustomerComponent(service, translator) {
     const response = await service.getUser();
     if (response && response.status && response.status === 200) {
         const user = response.data;
-        console.log('user', user);
         const col = Component.getContentColumn();
         col.innerHTML = userCard(user, translator);
         const logoutBtn = document.getElementById('logout');

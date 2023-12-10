@@ -7,7 +7,6 @@ export class InvoiceModal {
             const invoiceId = button.getAttribute('data-bs-invoice-id')
             const response = await service.get(invoiceId);
             if (response && response.status && response.status === 200) {
-                console.log('we have a valide response')
                 const command = response.data;
                 const modalTitle = exampleModal.querySelector('.modal-title')
                 modalTitle.textContent = translator.translate("invoice", "title") +' : ' + command.id;

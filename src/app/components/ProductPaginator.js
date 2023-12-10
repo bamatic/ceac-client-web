@@ -25,7 +25,6 @@ export class ProductPaginator extends Paginator {
         const row = Component.getContentRow();
         row.classList.add('g-4');
         const items = this.getChunk(page);
-        console.log('items', items);
         for (const product of this.getChunk(page)) {
             const col = document.createElement('div');
             col.classList.add(...['col-sm-6','col-md-4', 'col-lg-3']);

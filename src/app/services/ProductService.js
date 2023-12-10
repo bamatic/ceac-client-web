@@ -9,7 +9,6 @@ export class ProductService extends Service{
     }
     async all() {
       const response = await this.client.all(0,'/products/');
-      console.log(response)
       if (response && response.status && response.data && response.status === 200)
           return response;
       return null;
@@ -26,13 +25,11 @@ export class ProductService extends Service{
     async addToShoppingCard(data){
         const response = await this.client.store(data, '/shopping-card/', false);
         if (response && response.status && response.data && response.status === 200) {
-            console.log('i have the items', response.data)
             return {
                 status: 200,
                 data: ShoppingCardItem.fromJSON(response.data)
             };
         }
-        console.log('i do NOT have the items', response.status)
         return null;
     }
 }
