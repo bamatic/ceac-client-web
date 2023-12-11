@@ -79,7 +79,6 @@
     padding: 0;
     color: var(--bs-dark);
     font-weight: 500;
-    transition: .5s;
     outline: none;
 }
 
@@ -130,9 +129,6 @@
 
 
 /*** Product ***/
-.product-item {
-    transition: .1s;
-}
 
 .product-item:hover {
     border-width: 0 !important;
@@ -142,5 +138,18 @@
 .product-item:hover a.btn {
     color: var(--bs-white);
     background: var(--bs-primary);
+}
+
+/*** pagination ***/
+.page-link {
+    color: #0DA712 !important;
+}
+li.active .page-link {
+    color: #ffffff !important;
+    background-color: #048402 !important;
+}
+li.disabled .page-link {
+    color: #8b8989 !important;
+    background-color: #ffffff !important;
 }
 
