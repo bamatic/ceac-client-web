@@ -63,7 +63,12 @@ export const lang = {
     "created": "créé",
     "thanks-buy":"merci de votre achat",
     "action":"action",
-    "cancel":"annuler"
+    "cancel":"annuler",
+    "black-calmar":"calmar dans leur encre",
+    "grilled-calmar":"calmar grillé",
+    "mixed-salad":"salade mixte",
+    "vegetable-stew":"ragoût de légumes",
+    "grilled-chicken":"poulet rôti"
 
 
 }

@@ -88,7 +88,7 @@ export class CommandModal {
     static itemsTable(lines,translator) {
 
         const headers = [
-            {type: 'text', value: translator.translate('buy', "title"), dataKey:'name'},
+            {type: 'text', value: translator.translate('product', "title"), dataKey:'name'},
             {type:'currency', value: translator.translate('unit', "title"), dataKey: 'unitPrice'},
             {type:'number', value: translator.translate('qty', "title"), dataKey: 'qty'},
             {type: 'currency', value: translator.translate('pretax', "upper"), dataKey: 'preTax'},
@@ -97,7 +97,7 @@ export class CommandModal {
         ];
         const rows = lines.map(line => {
             return {
-                name: line.product.name,
+                name: translator.translate(line.product.name),
                 unitPrice: line.unitPrice,
                 qty: line.qty,
                 preTax: line.preTax(),

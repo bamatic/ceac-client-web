@@ -69,7 +69,7 @@ export class ProductModal {
         return '<table class="table">' +
             '  <thead>' +
             '    <tr>' +
-            '      <th class="text-center" scope="col">' + translator.translate('products', "title") + '</th>' +
+            '      <th class="text-center" scope="col">' + translator.translate('livraison', "title") + '</th>' +
             '      <th class="text-center" scope="col">' + translator.translate('unit', "title") + '</th>' +
             '      <th class="text-center" scope="col">' + translator.translate('pretax', "upper") + '</th>' +
             '      <th class="text-center" scope="col">' + translator.translate('tax', "upper") + '</th>' +

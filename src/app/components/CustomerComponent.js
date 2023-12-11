@@ -45,7 +45,7 @@ async function sendAddress(service, translator, type) {
     const deliveryStateInput = document.getElementById(type + '-state');
     if ( !deliveryAddressInput || !deliveryPostalCodeInput || !deliveryTownInput || !deliveryRegionInput ||
         !deliveryStateInput) {
-        CustomerComponent(service)
+        CustomerComponent(service, translator)
             .catch(error => console.log(error));
         return null;
     }
@@ -55,7 +55,7 @@ async function sendAddress(service, translator, type) {
     const region = deliveryRegionInput.value;
     const state = deliveryStateInput.value;
     if (!address || !postalCode || !town || !region || !state) {
-        CustomerComponent(service)
+        CustomerComponent(service, translator)
             .catch(error => console.log(error));
         return null;
     }
@@ -88,7 +88,7 @@ async function sendAddress(service, translator, type) {
         state: state
     }, type);
     if (response && response.status && response.status === 200) {
-        CustomerComponent(service)
+        CustomerComponent(service, translator)
             .catch(error => console.log(error));
     }
     if (response && response.status) {
@@ -132,7 +132,7 @@ async function sendEditCustomer(user, service, translator) {
         }
         const response = await service.update(user);
         if (response && response.status && response.status === 200) {
-            CustomerComponent(service)
+            CustomerComponent(service, translator)
                 .catch(error => console.log(error));
         }
         if (response && response.status) {
@@ -144,7 +144,7 @@ async function sendEditCustomer(user, service, translator) {
         return null;
     }
     else {
-        CustomerComponent(service)
+        CustomerComponent(service, translator)
             .catch(error => console.log(error));
     }
 }
@@ -237,7 +237,7 @@ function userCard(user, translator) {
         '' +
         '' +
         '   <h5 class="card-title text-primary">' +
-        '        <i class="bi bi-receipt"></i>'  + translator.translate("livraison address", "title") +
+        '        <i class="bi bi-receipt"></i>'  + translator.translate("delivery address", "title") +
         '        <button class="btn btn-outline-success btn-sm ms-4 shown-inline delivery" id="edit-delivery">' +
         '            <i class="bi bi-pencil-square"></i>'  + translator.translate("edit", "title") +
         '        </button>' +

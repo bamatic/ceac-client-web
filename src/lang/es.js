@@ -6,7 +6,7 @@ export const lang = {
     "set-command-ref": "Indique una referencia para el pedido",
     "do-command":"hacer pedido",
     "products":"productos",
-    "product": "product",
+    "product": "producto",
     "product-in-sc":"producto en el carrito",
     "add-products":"Añadir productos",
     "invoices": "facturas",
@@ -65,6 +65,11 @@ export const lang = {
     "action":"acción",
     "cancel":"cancelar",
     "previous":"ant",
-    "next":"sig"
+    "next":"sig",
+    "black-calmar":"txipis en su tinta",
+    "grilled-calmar":"txipis plancha",
+    "mixed-salad":"ensalada mixta",
+    "vegetable-stew":"menestra de verduras",
+    "grilled-chicken":"pollo asado"
 
 }

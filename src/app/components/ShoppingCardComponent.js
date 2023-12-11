@@ -26,7 +26,7 @@ export async function ShoppingCardComponent(service, translator) {
             const tableRows = items.map(item => {
                 return {
                     id: item.id,
-                    product_name: item.product.name,
+                    product_name: translator.translate(item.product.name, "title"),
                     product_unitPrice: item.product.unitPrice,
                     qty: item.qty,
                     preTax: item.preTax,
@@ -217,7 +217,7 @@ function customerAddress(item, translator) {
     row.classList.add('row', 'mb-4');
     const leftCol = document.createElement('div');
     leftCol.classList.add('col-sm-6');
-    leftCol.innerHTML = addressCard(translator.translate('livraison address', 'title'), 'success', item.deliveryAddress, item.name, translator);
+    leftCol.innerHTML = addressCard(translator.translate('delivery address', 'title'), 'success', item.deliveryAddress, item.name, translator);
     row.appendChild(leftCol);
     const rightCol = document.createElement('div');
     rightCol.classList.add('col-sm-6');

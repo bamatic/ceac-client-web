@@ -49,7 +49,7 @@ export function ProductCardComponent(product, translator) {
     div.appendChild(starDiv);
     const productLink = document.createElement('a');
     productLink.classList.add('text-success');
-    productLink.appendChild(document.createTextNode(product.name));
+    productLink.appendChild(document.createTextNode(translator.translate(product.name, "title")));
     div.appendChild(productLink);
     const price = document.createElement('h5');
     price.classList.add('text-success', 'mb-3');
