@@ -291,7 +291,7 @@ function userCard(user, translator) {
         '' +
         '' +
         '   <h5 class="card-title text-primary">' +
-        '        <i class="bi bi-receipt"></i>'  + translator.translate("livraison address", "title") +
+        '        <i class="bi bi-receipt"></i>'  + translator.translate("billing address", "title") +
         '        <button class="btn btn-outline-success btn-sm ms-4 shown-inline invoice" id="edit-invoice">' +
         '            <i class="bi bi-pencil-square"></i> Modificar' +
         '        </button>' +

@@ -26,7 +26,7 @@ export async function CommandComponent(service, translator, commandId) {
         });
         const tableHeaders = [
             {type: 'text', value: translator.translate('command','title'), dataKey: 'name'},
-            {type: 'text', value: translator.translate('state','title'), dataKey: 'stateES'},
+            {type: 'text', value: translator.translate('command_state','title'), dataKey: 'stateES'},
             {type: 'date', value: translator.translate('date','title'), dataKey: 'commandDate'},
             {type: 'date', value: translator.translate('livraison','title'), dataKey: 'deliveryDate'},
             {type: 'currency', value: translator.translate('price','title'), dataKey: 'price'},
